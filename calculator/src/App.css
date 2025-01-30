@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+
+#calc button{
+  margin: 20px;
+  font-size: 20px;
+}
+#calc input{
+  width: 50;
+  height: 20px;
+}
