@@ -86,19 +86,19 @@ function Calc(){
     return(
         <div id="calc">
             <label htmlFor="input">Input Box A:- </label>
-            <input placeholder="binary operations & C/P" type="number" name="input" id="input1" />
+            <input class="border border-gray-300 rounded-md p-2" placeholder="binary operations & C/P" type="number" name="input" id="input1" />
             <br /><br />
             <label htmlFor="input">Input Box B:- </label>
-            <input placeholder="binary operations & C/P" type="number" name="input" id="input2" />
+            <input class="border border-gray-300 rounded-md p-2" placeholder="binary operations & C/P" type="number" name="input" id="input2" />
             <br /><br />
             <label htmlFor="input">Single Input(SI) Box:- </label>
-            <input placeholder="for log, factorial" type="number" name="input3" id="input3" />
+            <input class="border border-gray-300 rounded-md p-2" placeholder="for log, factorial" type="number" name="input3" id="input3" />
             <br /><br />
             <label htmlFor="derivation">Derivation Expression:- </label>
-            <input placeholder="Derivation Expression" type="text" name="" id="derivation" />
+            <input class="border border-gray-300 rounded-md p-2" placeholder="Derivation Expression" type="text" name="" id="derivation" />
             <br /><br />
             <label htmlFor="wrt">with respect to:- </label>
-            <input placeholder="x, y, z" type="text" name="" id="wrt" />
+            <input class="border border-gray-300 rounded-md p-2" placeholder="x, y, z" type="text" name="" id="wrt" />
             <br /><br /><hr />
             <h2>Opperations</h2>
             <button onClick={add}>+</button>
