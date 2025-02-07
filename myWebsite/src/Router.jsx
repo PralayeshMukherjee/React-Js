@@ -1,5 +1,5 @@
 import React from 'react'
-import PagesHeader from './Component/PagesHeader'
+import PagesHeader from './Component/Header/PagesHeader'
 
 function Router() {
   return (
