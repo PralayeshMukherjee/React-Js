@@ -5,7 +5,7 @@ import Library from '../../images/Library.png'
 export default function PagesHeader() {
     return (
         <header className="shadow sticky z-50 top-0">
-            <nav className="bg-gray-300 border-gray-200 px-4 lg:px-6 py-2.5">
+            <nav className="bg-black-700 border-gray-200 px-4 lg:px-6 py-2" style={{background:"black"}}>
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
                         <img
@@ -17,7 +17,8 @@ export default function PagesHeader() {
                     <div className="flex items-center lg:order-2">
                         <Link
                             to="#"
-                            className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                            className="text-white-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+                            style={{color:"white",font:"55px"}}
                         >
                             Log in
                         </Link>
@@ -39,6 +40,7 @@ export default function PagesHeader() {
                                     className={(isActive) =>
                                         `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-gray-700" : "text-orange-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
+                                    style={{color:"white"}}
                                 >
                                     Home
                                 </NavLink>
@@ -49,6 +51,7 @@ export default function PagesHeader() {
                                     className={(isActive) =>
                                         `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-gray-700" : "text-orange-700"} border-b   border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
+                                    style={{color:"white"}}
                                 >
                                     About
                                 </NavLink>
@@ -59,6 +62,7 @@ export default function PagesHeader() {
                                     className={(isActive) =>
                                         `block py-2 pr-4 pl-3   duration-200 $    {isActive ?     "text-gray-700" :   "text-orange-700"}    border-b border-gray-100   hover:bg-gray-50  lg:hover:bg-transparent  lg:border-0  hover:text-orange-700    lg:p-0`
                                     }
+                                    style={{color:"white"}}
                                 >
                                     Contact
                                 </NavLink>

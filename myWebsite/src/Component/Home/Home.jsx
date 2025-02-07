@@ -1,39 +1,31 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Pic from '../../images/pic.png'
+import Typed from "typed.js";
 
 function Home() {
-    const [typed,setTyped] = useState("");
-    const stringIdx = useRef(0);
-    const charIdx = useRef(0);//by the help of this we stop re-rendeing
-    const strings = [
-        "More than 1000 books",
-        "Reach out to the Librarian",
-        "See all your issued books",
-        "See the dates of every book for resubmission"
-    ];
+    const typedMsg = useRef(null);
     useEffect(()=>{
-        const iterate = () =>{
-            if(charIdx.current<strings[stringIdx.current].length){
-                setTyped((prev) => prev + strings[stringIdx.current].charAt(charIdx.current));
-                charIdx.current++;
-                setTimeout(iterate,85);
-            }else{
-                setTimeout(() => {
-                    charIdx.current = 0
-                    stringIdx.current = (stringIdx.current + 1) % strings.length;
-                    setTyped("")
-                }, 2000);
-            }
+        const type = new Typed(typedMsg.current,{
+            strings: [
+                "More than 1000 books",
+                "Reach out to the Librarian",
+                "See all your issued books",
+                "See the dates of every book for resubmission",
+            ],
+            typeSpeed: 75,
+            loop: true
+        })
+        return ()=>{
+            type.destroy();
         }
-        iterate();
     },[])
   return (
-    <div className="hero w-full min-h-screen">
-        <section className="firstSection flex justify-around items-center my-[130px] text-black">
+    <div className="hero w-full min-h-screen bg-violet-100">
+        <section className="firstSection flex justify-around p-0 m-0 items-center my-[130px] text-black" style={{margin:"auto"}}>
             <div className="leftSection w-[30%] text-2xl my-8">
                 <div>Welcome to the Library</div>
                 <div>Here you can find:-</div>
-                <span id="element" className="text-[#aa6be4]">{typed}</span>
+                <span id="element" className="text-[#aa6be4]" ref={typedMsg}></span>
             </div>
             <div className="rightSection w-[30%]">
                 <img src={Pic} className="w-full my-[50px]" alt="Image" />
