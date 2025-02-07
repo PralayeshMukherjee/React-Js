@@ -1,6 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
+import img1 from '../../images/Library.png';
+
+
 export default function PagesFooter() {
     return (
         <footer className="bg-white border-y">
@@ -9,7 +12,7 @@ export default function PagesFooter() {
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
                             <img
-                                src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
+                                src={img1}
                                 className="mr-3 h-16"
                                 alt="Logo"
                             />

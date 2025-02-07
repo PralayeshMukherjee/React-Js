@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link,NavLink} from 'react-router-dom';
+import Library from '../../images/Library.png'
 
 export default function PagesHeader() {
     return (
@@ -8,7 +9,7 @@ export default function PagesHeader() {
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
                         <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMDGO8ofo2Feey6f49_sPNUEikQbvGGJjtTw&s"
+                            src={Library}
                             className="mr-2 w-25 h-20"
                             alt="Library"
                         />
