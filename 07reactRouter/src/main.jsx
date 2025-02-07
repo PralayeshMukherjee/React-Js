@@ -10,6 +10,7 @@ import Contact from './Componenet/Contact/Contact.jsx'
 import User from './Componenet/User/User.jsx'
 import GitHub, { githubInfoLoader } from './Componenet/GitHub/GitHub.jsx'
 
+// npm i react-router-dom
 // const router = createBrowserRouter([
 //   {
 //     path: '/',
