@@ -26,7 +26,7 @@ export default function Contact() {
             console.log(result);
             if(result.success==true){
                 setTimeout(() => {
-                    navigate('/successfulMessageSent')
+                    navigate('/TouchMail')
                 }, 2000);
             }else{
                 alert("Message not send!!! Please fill the form correcty or try again later")
